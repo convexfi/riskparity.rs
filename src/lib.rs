@@ -16,17 +16,17 @@ pub mod vanilla {
         }
         let mut wk = ndarray::Array1::<f64>::ones(n);
         wk = wk.mapv(|a| a / corr.sum());
-        let mut aux = ndarray::Array1::<f64>::zeros(n);
+        let mut aux = 0.5 * adj.dot(&wk);
         for _k in 0..maxiter {
-            aux = 0.5 * adj.dot(&wk);
             wk = (aux.mapv(|a| a.powi(2)) + budget).mapv(f64::sqrt) - aux;
-            if (wk.clone() * (corr.dot(&wk.clone())) - budget)
+            if (wk.clone() * (corr.dot(&wk)) - budget)
                 .mapv(f64::abs)
                 .mean()
                 < Some(tol)
             {
                 break;
             }
+            aux = 0.5 * adj.dot(&wk);
         }
         let w = wk / volatility;
         w.mapv(|a| a / w.sum())

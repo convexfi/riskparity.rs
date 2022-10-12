@@ -8,11 +8,11 @@ fn test_vanilla_case() {
         [-0.0119, -0.0308, 1.0],
     ]);
     let budget = ndarray::arr1(&[0.1594, 0.0126, 0.8280]);
-    let maxiter = 10;
-    let tol = 0.001;
+    let maxiter = 100;
+    let tol = 1e-6;
     let weights = compute_riskparity_ccd_choi(&cov, &budget, maxiter, tol);
     assert_eq!(
         weights,
-        ndarray::arr1(&[0.2798973605635454, 0.08779212122731471, 0.6323105182091397])
+        ndarray::arr1(&[0.27986281015768294, 0.08774910038832333, 0.6323880894539938])
     );
 }
