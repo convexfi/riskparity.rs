@@ -22,3 +22,10 @@ fn main() {
     // [0.279862, 0.087749, 0.632388]
 }
 ```
+
+## References
+
+* Choi, J., & Chen, R. (2022).
+Improved iterative methods for solving risk parity portfolio.
+Journal of Derivatives and Quantitative Studies 30(2), 114–124.
+[https://doi.org/10.1108/JDQS-12-2021-0031](https://doi.org/10.1108/JDQS-12-2021-0031)
