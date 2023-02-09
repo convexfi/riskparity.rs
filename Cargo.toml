@@ -1,7 +1,14 @@
 [package]
 name = "riskparity"
 version = "0.1.0"
+authors = ["Ze Vini <jvmirca@gmail.com>"]
 edition = "2021"
+license = "MIT"
+description = "Optimization of risk parity portfolios"
+repository = "https://github.com/convexfi/riskparity.rs"
+homepage = "https://mirca.github.io"
+categories = ["finance"]
+keywords = ["risk parity", "risk management", "portfolio", "optimization", "convex"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
