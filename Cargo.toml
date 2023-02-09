@@ -8,7 +8,11 @@ description = "Optimization of risk parity portfolios"
 repository = "https://github.com/convexfi/riskparity.rs"
 homepage = "https://mirca.github.io"
 categories = ["finance"]
-keywords = ["risk parity", "risk management", "portfolio", "optimization", "convex"]
+keywords = ["risk", "management", "portfolio", "optimization", "convex"]
+exclude = [
+    ".github/*",
+    ".gitignore",
+]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
