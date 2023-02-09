@@ -1,6 +1,14 @@
 # riskparity.rs
 Implementations of risk parity portfolios in Rust
 
+[![status]][actions]
+[![version]][crates]
+
+[status]: https://img.shields.io/github/actions/workflow/status/convexfi/riskparity.rs/tests.yml
+[actions]: https://github.com/convexfi/riskparity.rs/actions?query=branch%3Amain
+[version]: https://img.shields.io/crates/v/riskparity.svg
+[crates]: https://img.shields.io/crates/v/riskparity
+
 ## Example
 
 ```{rust}
